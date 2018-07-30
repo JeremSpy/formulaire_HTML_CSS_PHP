@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8" />
+        <title>Espace d'échange</title>
+        <link rel="icon" type="image/jpg" href="https://yt3.ggpht.com/-U8i_NnzeqCM/AAAAAAAAAAI/AAAAAAAAAAA/nFGd8iTfIiQ/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+</head>
+
+<body>
+        <br />
+        <h1>Espace d'échange</h1>
+        <br />
+        <br />
+        <p><a href="nothing.html"><img src="quest.jpg" alt="Une question ?" title="Ne clique pas là, ça ne fait rien."></a></p>
+        <br />
+        <h2>Dis m'en plus s'il te plaît.</h2>
+        <br />
+        <form action="process.php" method="POST">
+                <div>
+                    <label for="name">Quel est ton prénom ?</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                    <label for="msg">Une question ou une remarque ?</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <div class="button">
+                                <button type="submit">Envoyer le message</button>
+                            </div>
+            </form>
+
+        <!-- SOME SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!--
+$prenom = $_POST['prenom'];
+    echo "Merci " . ucwords($prenom);
+
+    $remarque = $_POST['remarque'];
+
+    $contenu = "Prénom : " . $prenom . "\r" . "\r" . "Remarques : " . $remarque . "\r";    
+
+    $monfichier = fopen("questionDUser.txt", "a+");
+
+    fputs($monfichier, $contenu);
+
+    fclose($monfichier);
+-->
